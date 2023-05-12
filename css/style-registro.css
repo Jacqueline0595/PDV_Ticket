@@ -147,15 +147,18 @@ form .boton input{
 
 @media (max-width: 584px){
     .cont{
-        max-width: 300px;
+        max-width: 100%;
     }
     form .datos-usuario .input-box {
-        margin: auto;
-        width: 500px;
+        margin-bottom: 15px;
+        max-width: 100%;
     }
     .cont form .datos-usuario{
         margin-left: 30px;
         max-height: 300px;
         overflow-y: scroll;
+    }
+    .datos-usuario::-webkit-scrollbar{
+        width: 0;
     }
 }
