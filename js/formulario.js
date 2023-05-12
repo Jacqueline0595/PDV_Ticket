@@ -6,3 +6,5 @@ function validar_registro(){
 		return 0;
 	}
 }
+
+// cambio de alancin
