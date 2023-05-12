@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ysabeau', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://pixabay.com/get/ge596ea532b6261d26ed8ce99a1493e0181e3b59c9124828abf83bf8780b9f1da08dfbd5827a1a8e80dccf0618736c55a.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.cont {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 35px 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cont .imagen{
+    display: block;
+    margin: auto;
+}
+
+.cont h1{
+    margin: 35px;
+    margin-bottom: 15px;
+}
+
+.cont .datos-cliente h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cont .datos-agente h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form .datos-cliente .input-box {
+    margin: 30px;
+    margin-bottom: 10px;
+}
+
+form .datos-cliente p{
+    font-size: 13px;
+    margin: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+form .datos-agente .input-box {
+    margin: 30px;
+    margin-bottom: 10px;
+}
+
+.datos-cliente .input-box input{
+    height: 30px;
+    width: 220px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.datos-agente .input-box input{
+    height: 30px;
+    width: 220px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.datos-cliente .input-box .detalles {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.datos-agente .input-box .detalles {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+form .boton{
+    height: 30px;
+    margin: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form .boton input{
+    height: 30px;
+    width: 100px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}

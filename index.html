@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="cont">
+        <img class="imagen" src="./images/logoPDV.png" alt="Logo PDV Sistemas Integrales Tecnologías de Información" width="414" height="96">
+        <h1> Bienvenido al centro de soporte </h1>
+
+        <!--Parte del cliente -->
+        <form action="" method="post">
+            <div class="datos-cliente">
+                <h3>Eres cliente</h3>
+                <label for="nombre-correo-cliente">
+                    <div class="input-box">
+                        <span class="detalles">Correo electronico</span>
+                        <input type="email" name="correo" id="correo" autocomplete="email" required />
+                    </div>
+                </label>
+                <label for="contraseña-cliente">
+                    <div class="input-box">
+                        <span class="detalles">Contraseña</span>
+                        <input type="password" name="contraseña" id="contraseña-cliente" autocomplete="current-password" required />
+                    </div>
+                </label>
+                <div class="boton">
+                    <input type="submit">
+                </div>
+                <p>¿No tienes cuenta? Registrate <a href="./Registro.html">aquí</a></p>
+            </div>
+        </form>
+
+        <!--Parte del agente-->
+        <form action="" method="post">
+            <div class="datos-agente">
+                <h3>Eres un agente</h3>
+                <label for="nombre-correo-agente">
+                    <div class="input-box">
+                        <span class="detalles">Correo electronico</span>
+                        <input type="email" name="correo" id="correo-agente" autocomplete="email" required />
+                    </div>
+                </label>
+                <label for="contraseña-agente">
+                    <div class="input-box">
+                        <span class="detalles">Contraseña</span>
+                        <input type="password" name="contraseña" id="contraseña-agente" autocomplete="current-password" required />
+                    </div>
+                </label>
+                <div class="boton">
+                    <input type="submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

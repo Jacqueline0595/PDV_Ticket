@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ysabeau', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#d3d3d3, #0012d5);
+}
+
+.cont {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 20px 20px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cont form .datos-usuario {
+    margin-left: 30px;
+    margin-right: 0px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+form .datos-usuario .input-box {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+
+form .datos-usuario .input-box-select{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+
+.datos-usuario .input-box input{
+    margin: 0 auto;
+    margin-left: 20px;
+    height: 30px;
+    width: 250px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.datos-usuario .input-box input[id="nombre"]{
+    margin-left: 51px;
+}
+.datos-usuario .input-box input[id="correo-agente"]{
+    margin-left: 47px;
+}
+.datos-usuario .input-box input[id="usuario"]{
+    margin-left: 122px;
+}
+.datos-usuario .input-box input[id="direccion"]{
+    margin-left: 110px;
+}
+.datos-usuario .input-box input[id="telefono"]{
+    margin-left: 116px;
+}
+.datos-usuario .input-box input[id="extencion"]{
+    margin-left: 146px;
+}
+.datos-usuario .input-box input[id="municipio"]{
+    margin-left: 109px;
+}
+.datos-usuario .input-box input[id="localidad"]{
+    margin-left: 109px;
+}   
+.datos-usuario .input-box input[id="contraseña"]{
+    margin-left: 95px;
+}
+.datos-usuario .input-box input[id="contraseña-2"]{
+    margin-left: 8px;
+}
+
+.datos-usuario .input-box-select select{
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #6f6d6d;
+    display: inline-block;
+}
+
+.datos-usuario .input-box-select .detalles-select[id="zona-hora"]{
+    margin-right: 86px;
+}
+.datos-usuario .input-box-select .detalles-select[id="entidad"]{
+    margin-right: 123px;
+}
+
+.datos-usuario .input-box-select select::-ms-expand{
+    display: flex;
+}
+
+.datos-usuario .input-box-select select:focus{
+    outline: none;
+    box-shadow: 0 0 10px -1px #6f6d6d;
+}
+
+.datos-usuario .input-box .detalles {
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.datos-usuario .input-box .detalles-select {
+    margin: 20px 0 12px 0;
+}
+
+form .boton{
+    height: 30px;
+    margin: 20px;
+    text-align: center;
+}
+
+form .boton input{
+    height: 100%;
+    width: 200px;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #d3d3d3, #0012d5);
+}
+
+@media (max-width: 584px){
+    .cont{
+        max-width: 300px;
+    }
+    form .datos-usuario .input-box {
+        margin: auto;
+        width: 500px;
+    }
+    .cont form .datos-usuario{
+        margin-left: 30px;
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
