@@ -24,21 +24,21 @@ body{
 }
 
 .cont form .datos-usuario {
-    margin-left: 40px;
-    margin-right: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
     max-height: 300px;
     overflow-y: scroll;
 }
 
 form .datos-usuario .input-box {
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 
 form .datos-usuario .input-box-select{
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 
@@ -58,31 +58,31 @@ form .datos-usuario .input-box-select{
 /* alinear los input */
 
 .datos-usuario .input-box input[id="nombre"]{
-    margin-left: 51px;
+    margin-left: 64px;
 }
 .datos-usuario .input-box input[id="correo-agente"]{
-    margin-left: 47px;
+    margin-left: 59px;
 }
 .datos-usuario .input-box input[id="usuario"]{
-    margin-left: 122px;
+    margin-left: 136px;
 }
 .datos-usuario .input-box input[id="direccion"]{
-    margin-left: 110px;
+    margin-left: 124px;
 }
 .datos-usuario .input-box input[id="telefono"]{
-    margin-left: 116px;
+    margin-left: 130px;
 }
 .datos-usuario .input-box input[id="extencion"]{
-    margin-left: 146px;
+    margin-left: 159px;
 }
 .datos-usuario .input-box input[id="municipio"]{
-    margin-left: 109px;
+    margin-left: 122px;
 }
 .datos-usuario .input-box input[id="localidad"]{
-    margin-left: 109px;
+    margin-left: 121px;
 }   
 .datos-usuario .input-box input[id="contraseña"]{
-    margin-left: 95px;
+    margin-left: 107px;
 }
 .datos-usuario .input-box input[id="contraseña-2"]{
     margin-left: 8px;
@@ -102,10 +102,10 @@ form .datos-usuario .input-box-select{
 /* alinear los select */
 
 .datos-usuario .input-box-select .detalles-select[id="zona-hora"]{
-    margin-right: 86px;
+    margin-right: 100px;
 }
 .datos-usuario .input-box-select .detalles-select[id="entidad"]{
-    margin-right: 123px;
+    margin-right: 136px;
 }
 
 .datos-usuario .input-box-select select::-ms-expand{

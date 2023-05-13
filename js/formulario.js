@@ -4,13 +4,9 @@ function validar_registro(){
 		alert("Los campos de contraseña no pueden estar vacios")
 		return 0;
 	}
-	if(document.registro.contraseña.value == document.registro.contraseña2.value){
-		alert("Ambas contraseñas son iguales")
-	} else{
+	if(document.registro.contraseña.value != document.registro.contraseña2.value){
 		alert("Las contraseñas ingresadas son distintas")
 	}
-
-
 }
 
 // cambio de alancin
