@@ -41,7 +41,8 @@ body{
 }
 
 .list .logo{
-    display: block;
+    position: relative;
+    top: -12em;
 }
 
 .list_item{
