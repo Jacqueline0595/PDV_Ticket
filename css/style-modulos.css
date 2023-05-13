@@ -30,12 +30,12 @@ body{
     background: #fff;
 }
 
-.list .logo{
+/* .list .logo{
     display: flex;
     flex-direction: initial;
     position: relative;
     top: 8em;
-}
+} */
 
 .list{
     width: 100%;
