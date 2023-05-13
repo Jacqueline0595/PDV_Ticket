@@ -10,7 +10,7 @@ body{
 }
 
 .nav{
-    width: 300px;
+    width: 250px;
 }
 
 .nav_link{
@@ -42,7 +42,7 @@ body{
 
 .list .logo{
     position: relative;
-    top: -12em;
+    top: -11em;
 }
 
 .list_item{
