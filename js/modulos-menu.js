@@ -1,16 +1,15 @@
-let listElements = document.querySelectorAll('.list_boton--click');
+let arrow = document.querySelectorAll(".arrow");
 
-listElements.forEach(listElement => {
-    listElement.addEventListener('click', ()=>{
-        
-        listElement.classList.toggle('flecha');
-
-        let height = 0;
-        let menu = listElement.nextElementSibling;
-        if(menu.clientHeight == 0){
-            height=menu.scrollHeight;
-        }
-
-        menu.style.height = `${height}px`; 
+for(var i = 0; i < arrow.length; i++){
+    arrow[i].addEventListener("click", (e)=>{
+        let arrowParent = e.target.parentElement.parentElement;
+        arrowParent.classList.toggle("showMenu");
     })
+}
+
+let barra = document.querySelector(".barra");
+let sidebarBtn = document.querySelector(".bx-menu");
+console.log(sidebarBtn);
+sidebarBtn.addEventListener("click", ()=>{
+    barra.classList.toggle("close");
 });

@@ -4,102 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Tickets Abiertos</title>
     <link rel="stylesheet" href="./css/style-modulos.css">
 </head>
 <body>
     <main>
-        <nav class="nav">
-            <h2>PDV</h2><img src="./assets/menu.svg" alt="menu">
-            <ul class="list">
-                <li class="list_item list_item--click">
-                    <div class="list_boton list_boton--click">
-                        <img src="./assets/tickets.svg" alt="Icono tickets" class="list_img">
-                        <a href="#" class="nav_link">Tickets</a>
-                        <img src="./assets/flecha.svg" alt="Flecha menú" class="list_flecha">
+        <div class="barra">
+            <div class="logo">
+                <div class="contimg">
+                    <img src="./images/logoPDVbolita.png" alt="logo" width="43" height="46">
+                </div>
+            </div>
+
+            <ul class="nav-links">
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class='bx bx-folder-open'></i>
+                            <span class="link-name">Tickets</span>
+                        </a>
+                        <i class='bx bx-chevron-right arrow' ></i>
                     </div>
+                    <ul class="sub-menu">
+                        <li><a class="link-name" href="#">Tickets</a></li>
+                        <li><a href="#">Abiertos</a></li>
+                        <li><a href="#">Terminados</a></li>
+                        <li><a href="#">Todos los tickets</a></li>
+                        <li><a href="#">Buscar Ticket</a></li>
+                        <li><a href="#">Nuevo Ticket</a></li>
 
-                    <ul class="list_vista">
-                        <li class="list_dentro">
-                            <a href="./modulo-tickets.html" class="nav_link nav_link--dentro">Abiertos</a>
-                        </li>
-
-                        <li class="list_dentro">
-                            <a href="./html/tickets-terminados.html" class="nav_link nav_link--dentro">Terminados</a>
-                        </li>
-
-                        <li class="list_dentro">
-                            <a href="#" class="nav_link nav_link--dentro">Todos los tickets</a>
-                        </li>
-
-                        <li class="list_dentro">
-                            <a href="#" class="nav_link nav_link--dentro">Buscar ticket</a>
-                        </li>
-
-                        <li class="list_dentro">
-                            <a href="#" class="nav_link nav_link--dentro">Nuevo ticket</a>
-                        </li>
+                        <li><a href="#">Nuevo Ticket</a></li>
+                        <li><a href="#">Nuevo Ticket</a></li>
+                        <li><a href="#">Nuevo Ticket</a></li>
+                        <li><a href="#">Nuevo Ticket</a></li>
+                        <li><a href="#">Nuevo Ticket</a></li>
+                        <li><a href="#">Nuevo Ticket</a></li>
                     </ul>
                 </li>
 
-                <li class="list_item list_item--click">
-                    <div class="list_boton list_boton--click">
-                        <img src="./assets/tareas.svg" alt="Icono tareas" class="list_img">
-                        <a href="#" class="nav_link">Tareas</a>
-                        <img src="./assets/flecha.svg" alt="Flecha menú" class="list_flecha">
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class='bx bx-task'></i>
+                            <span class="link-name">Tareas</span>
+                        </a>
+                        <i class='bx bx-chevron-right arrow'></i>
                     </div>
-
-                    <ul class="list_vista">
-                        <li class="list_dentro">
-                            <a href="#" class="nav_link nav_link--dentro">Abiertas</a>
-                        </li>
-
-                        <li class="list_dentro">
-                            <a href="#" class="nav_link nav_link--dentro">Terminadas</a>
-                        </li>
-
-                        <li class="list_dentro">
-                            <a href="#" class="nav_link nav_link--dentro">Todos las tareas</a>
-                        </li>
-
-                        <li class="list_dentro">
-                            <a href="#" class="nav_link nav_link--dentro">Nuevas tareas</a>
-                        </li>
+                    <ul class="sub-menu">
+                        <li><a class="link-name" href="#">Tareas</a></li>
+                        <li><a href="#">Abiertas</a></li>
+                        <li><a href="#">Terminadas</a></li>
+                        <li><a href="#">Todas las tareas</a></li>
+                        <li><a href="#">Nuevas tareas</a></li>
                     </ul>
                 </li>
-                
-                <li class="list_item">
-                    <div class="list_boton">
-                        <img src="./assets/usuario.svg" alt="Icono usuario" class="list_img">
-                        <a href="#" class="nav_link">Clientes</a>
-                    </div>
+
+                <li>
+                    <a href="#">
+                        <i class='bx bx-user'></i>
+                        <span class="link-name">Clientes</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link-name" href="#">Directorio de Clientes</a></li>
+                    </ul>
                 </li>
 
-                <li class="list_item list_item--click">
-                    <div class="list_boton list_boton--click">
-                        <img src="./assets/configuracion.svg" alt="Icono tareas" class="list_img">
-                        <a href="#" class="nav_link">Panel de control</a>
-                        <img src="./assets/flecha.svg" alt="Flecha menú" class="list_flecha">
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class='bx bx-cog'></i>
+                            <span class="link-name">Panel de Control</span>
+                        </a>
+                        <i class='bx bx-chevron-right arrow' ></i>
                     </div>
-
-                    <ul class="list_vista">
-                        <li class="list_dentro">
-                            <a href="#" class="nav_link nav_link--dentro">Panel de control</a>
-                        </li>
-
-                        <li class="list_dentro">
-                            <a href="#" class="nav_link nav_link--dentro">Directorio de agentes</a>
-                        </li>
-
-                        <li class="list_dentro">
-                            <a href="#" class="nav_link nav_link--dentro">Mi perfil</a>
-                        </li>
+                    <ul class="sub-menu">
+                        <li><a class="link-name" href="#">Panel de control</a></li>
+                        <li><a href="#">Panel de control</a></li>
+                        <li><a href="#">Directorio de Agentes</a></li>
+                        <li><a href="#">Mi perfil</a></li>
                     </ul>
                 </li>
             </ul>
-        </nav>
-    </main>
+        </div>
 
-    <script src="./js/modulos-menu.js"></script>
+        <section class="home-section">
+            <div class="home-content">
+                <i class='bx bx-menu'></i>
+                <span class="text">Drop Down SideBar</span>
+            </div>
+        </section>
+
+        <script src="./js/modulos-menu.js"></script>
+
 </body>
 </html>
