@@ -41,6 +41,9 @@
     overflow: auto;
 }
 
+.barra.close .nav-links{
+    overflow: visible;
+}
 
 .barra .nav-links::-webkit-scrollbar{
     display: none;
