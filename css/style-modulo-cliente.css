@@ -10,7 +10,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 230px;
+    width: 280px;
     background: #5c5c5c;
     z-index: 100;
     transition: all 0.5s ease;
@@ -95,7 +95,7 @@
 }
 
 .barra .nav-links li a .link-name{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color: #fff;
     transition: all 0.4s ease;
@@ -175,8 +175,8 @@
     position: relative;
     background: #dbdbdb;
     height: 100vh;
-    left: 230px;
-    width: calc(100% - 230px);
+    left: 280px;
+    width: calc(100% - 280px);
     transition: all 0.5s ease;
 }
 

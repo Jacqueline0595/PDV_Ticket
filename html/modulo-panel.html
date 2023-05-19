@@ -4,9 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Panel de Control</title>
+    <link rel="stylesheet" href="/css/style-modulo-panel.css">
 </head>
 <body>
-    <p>panel de control</p>
+    <main>
+        <div class="barra">
+            <div class="logo">
+                <div class="contimg">
+                    <img src="/images/logoPDVbolita.png" alt="logo" width="43" height="46">
+                </div>
+            </div>
+
+            <ul class="nav-links">
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class='bx bx-folder-open'></i>
+                            <span class="link-name">Tickets</span>
+                        </a>
+                        <i class='bx bx-chevron-right arrow' ></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link-name" href="#">Tickets</a></li>
+                        <li><a href="/modulo-tickets.html">Abiertos</a></li>
+                        <li><a href="#">Terminados</a></li>
+                        <li><a href="#">Todos los tickets</a></li>
+                        <li><a href="#">Buscar Ticket</a></li>
+                        <li><a href="#">Nuevo Ticket</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class='bx bx-task'></i>
+                            <span class="link-name">Tareas</span>
+                        </a>
+                        <i class='bx bx-chevron-right arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link-name" href="#">Tareas</a></li>
+                        <li><a href="/html/modulo-tareas.html">Abiertas</a></li>
+                        <li><a href="#">Terminadas</a></li>
+                        <li><a href="#">Todas las tareas</a></li>
+                        <li><a href="#">Nuevas tareas</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class='bx bx-user'></i>
+                        <span class="link-name">Clientes</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link-name" href="/html/modulo-cliente.html">Directorio de Clientes</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class='bx bx-cog'></i>
+                            <span class="link-name">Panel de Control</span>
+                        </a>
+                        <i class='bx bx-chevron-right arrow' ></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link-name" href="#">Panel de control</a></li>
+                        <li><a href="/html/modulo-panel.html">Panel de control</a></li>
+                        <li><a href="#">Directorio de Agentes</a></li>
+                        <li><a href="#">Mi perfil</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <section class="home-section">
+            <div class="home-content">
+                <i class='bx bx-menu'></i>
+                <span class="text">Panel de control</span>
+            </div>
+        </section>
+
+        <script src="/js/modulos-menu.js"></script>
+    </main>
 </body>
 </html>
