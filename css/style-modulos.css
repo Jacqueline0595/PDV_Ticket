@@ -168,7 +168,7 @@
 
 .barra .nav-links li:hover .sub-menu.blank{
     top: 50%;
-    transform: translateY(-50px);
+    transform: translateY(-25px);
 }
 
 .home-section{
