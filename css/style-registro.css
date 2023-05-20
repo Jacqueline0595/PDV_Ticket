@@ -35,12 +35,10 @@ form .datos-usuario .input-box {
     margin-left: 10px;
 }
 
-
 form .datos-usuario .input-box-select{
     margin-bottom: 10px;
     margin-left: 10px;
 }
-
 
 .datos-usuario .input-box input{
     margin: 0 auto;
@@ -60,8 +58,9 @@ form .datos-usuario .input-box-select{
 .datos-usuario .input-box input[id="nombre"]{
     margin-left: 64px;
 }
-.datos-usuario .input-box input[id="correo-agente"]{
+.datos-usuario .input-box input[id="correo"]{
     margin-left: 59px;
+    margin-bottom: 0px;
 }
 .datos-usuario .input-box input[id="usuario"]{
     margin-left: 136px;
@@ -86,6 +85,15 @@ form .datos-usuario .input-box-select{
 }
 .datos-usuario .input-box input[id="contraseña-2"]{
     margin-left: 8px;
+}
+
+form .datos-usuario .input-box #email-error{
+    display: block;
+    margin-left: 195px;
+    font-size: 12px;
+    font-weight: 400;
+    color: red;
+    transition: top 0.5s;
 }
 
 .datos-usuario .input-box-select select{
