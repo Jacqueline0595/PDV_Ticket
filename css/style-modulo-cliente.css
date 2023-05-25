@@ -171,6 +171,44 @@
     transform: translateY(-25px);
 }
 
+.barra .profile-details{
+    position: fixed;
+    bottom: 0;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #7f7f7f;
+    padding: 12px 0;
+    transition: all 0.5s ease;
+}
+
+.barra.close .profile-details{
+    background: none;
+}
+
+.barra.close .profile-details{
+    width: 78px;
+}
+
+.barra .profile-details .profile_name,
+.barra .profile-details .job{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.barra.close .profile-details i,
+.barra.close .profile-details .profile_name,
+.barra.close .profile-details .job{
+  display: none;
+}
+
+.barra .profile-details .job{
+  font-size: 12px;
+}
+
 .home-section{
     position: relative;
     background: #dbdbdb;
