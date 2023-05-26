@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="stylesheet" href="./css/style-registro.css">
-    <script src="./js/formulario.js"></script> <!--añadir-->
+    <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
     <div class="cont">
-        <form action="./index.html" method="get" id="formulario" name="registro">
+        <form action="enviar.php" method="post" id="formulario" name="registro">
             <center>
                 <img src="./images/logoPDVbolita.png" alt="Logo PDV Sistemas Integrales Tecnologías de Información" width="93" height="96">
                 <h1>Registrate</h1><br>
@@ -42,13 +41,13 @@
                 <label for="direccion-new">
                     <div class="input-box">
                         <span class="detalles">Dirección</span>
-                        <input type="text" placeholder="Escribe tu dirección" name="direccion" id="direccion">
+                        <input type="text" placeholder="Escribe tu dirección" name="direccion" id="direccion" required>
                     </div>
                 </label>
-                <label for="zona-horaria">
+                <label for="zona_horaria">
                     <div class="input-box-select">
-                        <span class="detalles-select" id="zona-hora">Zona horaria</span>
-                        <select name="zona-horaria" id="zona-horaria">
+                        <span class="detalles-select" id="zona_hora">Zona horaria</span>
+                        <select name="zona_horaria" id="zona_horaria">
                             <option value="zona-pacífico">Zona Pacífico</option>
                             <option value="zona-montaña">Zona Montaña</option>
                             <option value="zona-centro">Zona Centro</option>
@@ -59,13 +58,13 @@
                 <label for="telefono">
                     <div class="input-box">
                         <span class="detalles">Telefono</span>
-                        <input type="text" placeholder="(Código de área) Número" name="telefono" id="telefono">
+                        <input type="text" placeholder="(Código de área) Número" name="telefono" id="telefono" required>
                     </div>
                 </label>
                 <label for="ext">
                     <div class="input-box">
                         <span class="detalles">EXT</span>
-                        <input type="text" placeholder="Número de EXT" name="extencion" id="extencion">
+                        <input type="text" placeholder="Número de EXT" name="extencion" id="extencion" required>
                     </div>
                 </label>
                 <label for="entidad">
@@ -110,13 +109,13 @@
                 <label for="municipio">
                     <div class="input-box">
                         <span class="detalles">Municipio</span>
-                        <input type="text" placeholder="Municipio al que perteneces" name="municipio" id="municipio">
+                        <input type="text" placeholder="Municipio al que perteneces" name="municipio" id="municipio" required>
                     </div>
                 </label>
                 <label for="localidad">
                     <div class="input-box">
                         <span class="detalles">Localidad</span>
-                        <input type="text" placeholder="Localidad a la que perteneces" name="localidad" id="localidad" autocomplete="address-level1">
+                        <input type="text" placeholder="Localidad a la que perteneces" name="localidad" id="localidad" autocomplete="address-level1" required>
                     </div>
                 </label>
                 <label for="contraseña">
@@ -133,16 +132,28 @@
                 </label>
             </div>
             
-            <!-- boton enviar -->
+            <!-- boton enviar-->
             <div class="boton">
-                <input type="submit" value="Enviar" onclick="validar_registro()">
+                <input type="submit" value="Enviar" name="Enviar" onclick="validar_registro()">
             </div>
 
-            <!-- boton regresar -->
+            <!--boton regresar-->
             <div class="boton">
                 <input type="button" value="Página anterior" onClick="history.go(-1);">
             </div>
         </form>
     </div>
+    <script>
+        function validar_registro(){
+            var c1 = document.getElementById('contraseña');
+            var c2 = document.getElementById('contraseña2');
+            //validación de la contraseña
+            if(c1.value!=c2.value){
+                alert("Las contraseñas ingresadas son diferentes");
+                c1.value="";
+                c2.value="";
+            }
+        }
+    </script>
     </body>
 </html>
